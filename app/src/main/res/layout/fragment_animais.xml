@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".Fragment.AnimaisFragment">
+
+
+    <ImageButton
+        android:id="@+id/buttonDog"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/animais__cao"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLion"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCat"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonCat"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/animais__gato"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMonkey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonDog"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonLion"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/animais__leao"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSheep"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMonkey"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDog" />
+
+    <ImageButton
+        android:id="@+id/buttonMonkey"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/animais__macaco"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonLion"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCat" />
+
+    <ImageButton
+        android:id="@+id/buttonSheep"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/animais__ovelha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCow"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLion" />
+
+    <ImageButton
+        android:id="@+id/buttonCow"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/animais__vaca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonSheep"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMonkey" />
+
+</android.support.constraint.ConstraintLayout>
