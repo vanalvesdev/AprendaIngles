@@ -20,4 +20,14 @@ public class BaseFragment extends Fragment {
         });
     }
 
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+        if (mediaPlayer != null) {
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
+    }
 }
